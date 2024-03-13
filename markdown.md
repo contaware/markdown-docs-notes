@@ -106,7 +106,7 @@ foo@bar:~$ git --version
 
 ## Tables
 
-```
+```md
 | Left align  | Centered | Right align |
 | :---------  | :------: | ----------: |
 | T1          | T2       | T3          |
@@ -125,13 +125,27 @@ The path of a link is relative to the current file. In GitHub links starting wit
 
 ### External links
 
+```md
+[Link](https://www.contaware.com "Optional Title")
+
+<https://www.contaware.com>
+```
+
 [Link](https://www.contaware.com "Optional Title")
 
 <https://www.contaware.com>
 
 ### Reference links
 
-Reference links are useful when linking multiple times to the same target:
+Reference links are useful when linking multiple times to the same target.
+
+```md
+[First Link][ref1]
+
+[Second Link][ref1]
+
+[ref1]: https://www.contaware.com "Optional Title"
+```
 
 [First Link][ref1]
 
@@ -140,6 +154,12 @@ Reference links are useful when linking multiple times to the same target:
 [ref1]: https://www.contaware.com "Optional Title"
 
 ### Email links
+
+```md
+[Contact Us](mailto:oliver.pfister@contaware.com)
+
+<oliver.pfister@contaware.com>
+```
 
 [Contact Us](mailto:oliver.pfister@contaware.com)
 
@@ -154,16 +174,32 @@ The anchors are derived from the headers like:
 3. Spaces are replaced by hyphens
 4. All other characters are removed
 
+```md
+[Internal link](#headings)
+```
+
 [Internal link](#headings)
 
 ### Link to another markdown file
+
+```md
+[Link to another md file](another.md)
+```
 
 [Link to another md file](another.md)
 
 ### Image
 
-![alt text](contaware-header.png "Optional image title")
+```md
+![alt text](contaware-header.png "Optional Title")
+```
+
+![alt text](contaware-header.png "Optional Title")
 
 ### Clickable image
+
+```md
+[![alt text](contaware-header.png)](https://www.contaware.com)
+```
 
 [![alt text](contaware-header.png)](https://www.contaware.com)
