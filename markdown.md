@@ -1,28 +1,16 @@
 # Markdown Docs & Notes <!-- omit from toc -->
 
-## Table of contents <!-- omit from toc -->
-
-- [Headings](#headings)
-- [Paragraphs and line breaks](#paragraphs-and-line-breaks)
-- [Typography](#typography)
-- [Horizontal rules](#horizontal-rules)
-- [Lists](#lists)
-- [Code](#code)
-- [Comments](#comments)
-- [Tables](#tables)
-- [Links](#links)
-
 
 ## Headings
 
-A space is required after the hash!
+A space is required after the **hash** character:
 
-# H1 <!-- omit from toc -->
-## H2 <!-- omit from toc -->
-### H3 <!-- omit from toc -->
-#### H4 <!-- omit from toc -->
-##### H5 <!-- omit from toc -->
-###### H6 <!-- omit from toc -->
+# \# H1 <!-- omit from toc -->
+## \#\# H2 <!-- omit from toc -->
+### \#\#\# H3 <!-- omit from toc -->
+#### \#\#\#\# H4 <!-- omit from toc -->
+##### \#\#\#\#\# H5 <!-- omit from toc -->
+###### \#\#\#\#\#\# H6 <!-- omit from toc -->
 
 
 ## Paragraphs and line breaks
@@ -32,7 +20,7 @@ Paragraphs need spacing before and after them.
 Another paragraph with a \<br\><br>
 this should be the next line.
 
-If html tags are forbidden use two trailing spaces to break a line  
+If html tags are forbidden, use two trailing spaces to break a line  
 here is the next line.
 
 
@@ -40,9 +28,11 @@ here is the next line.
 
 *Italic* - **Bold** - <mark>highlight</mark> - x<sup>2</sup> - H<sub>2</sub>O
 
-Escape special chars with backslashes: \*Normal\*
+Depending from the location, it may be necessary to escape the following special characters with a **leading backslash**:  
+\\ \` \* \_ \{\} \[\] \<\> \(\) \# \+ \- \. \! \|
 
-Use unicode symbols with copy/paste: 💣 🚀 ❤️ → 🙂
+Use **unicode** symbols with copy/paste:  
+💣 🚀 ❤️ → 🙂
 
 > Blockquote text
 > - Item1
@@ -51,6 +41,8 @@ Use unicode symbols with copy/paste: 💣 🚀 ❤️ → 🙂
 
 
 ## Horizontal rules
+
+A horizontal rule gets added by 3 or more hyphens:
 
 ---
 
@@ -77,12 +69,12 @@ List subitems have to indent at least as much as the first character that's not 
 This is a `inline code` with backticks. 
 
     # Traditional code blocks with four leading spaces
-    # or one tab (not syntax highlighting)
+    # or one tab (no syntax highlighting)
     echo "Hello World!"
     printf ''%s\n' "$var1"
 
 ```bash
-# 3-backticks code blocks support languages for syntax highlighting:
+# 3-backticks code blocks support syntax highlighting:
 # c cpp arduino|ino csharp javascript|js json html css php 
 # python|py bash powershell|ps markdown|md
 echo "Hello World!"
@@ -98,11 +90,11 @@ foo@bar:~$ git --version
 
 ## Comments
 
-- Shows up in a HTML source code output: `<!-- Comment -->`
+- Shows up in HTML source code output: `<!-- Comment -->`
 
 <!-- Comment -->
 
-- Does not show up in a HTML source code output: `[Comment]: #`
+- Does not show up in HTML source code output: `[Comment]: #`
 
 [Comment]: #
 
@@ -119,20 +111,45 @@ foo@bar:~$ git --version
 
 The path of the link is relative to the current file. In GitHub links starting with a slash are relative to the repository root.
 
-[Contaware](https://www.contaware.com "Optional link title")
+### External links
 
-[Link to Headings](#headings)
+[External link to contaware.com](https://www.contaware.com "Optional link title")
+
+### Reference links
+
+Reference links are useful when linking multiple times to the same target:
+
+[First ref link to contaware.com][ref1]
+
+[Second ref link to contaware.com][ref1]
+
+[ref1]: https://www.contaware.com "Optional link title"
+
+### Internal link
+
+The anchors are derived from the headers like:
+
+1. Making all letters lowercase
+2. Numbers remain as they are
+3. Spaces are replaced by hyphens
+4. All other characters are removed
+
+[Internal link](#headings)
+
+### Link to another markdown file
 
 [Link to another md file](another.md)
 
-[Ref link][ref1]
+### Image
 
-![alt text](image.jpg "Optional image title")
+![alt text](contaware-header.png "Optional image title")
 
-[![alt text](image.jpg)](https://www.contaware.com)
+### Clickable image
 
-The Markdown syntax for images doesn't allow image width and height, use html:
+[![alt text](contaware-header.png)](https://www.contaware.com)
 
-<img src="https://www.contaware.com/images/headers/contaware_header.png" width="600" height="100" alt="alt text">
+### Image size
 
-[ref1]: https://www.google.com "Optional link title"
+The Markdown syntax for images does not allow image width and height, use html if supported:
+
+<img src="contaware-header.png" width="300" height="52" alt="alt text">
