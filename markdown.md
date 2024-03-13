@@ -26,7 +26,15 @@ here is the next line.
 
 ## Typography
 
-*Italic* - **Bold** - <mark>highlight</mark> - x<sup>2</sup> - H<sub>2</sub>O
+- `*Italic*` *Italic*
+- `**Bold**` **Bold**
+
+If html tags are supported:
+
+- `<mark>highlight</mark>` <mark>highlight</mark> 
+- `x<sup>2</sup>` x<sup>2</sup>
+- `H<sub>2</sub>O` H<sub>2</sub>O 
+- `<small>small</small>` <small>small</small>
 
 Depending from the location, it may be necessary to escape the following special characters with a **leading backslash**:  
 \\ \` \* \_ \{\} \[\] \<\> \(\) \# \+ \- \. \! \|
@@ -34,98 +42,110 @@ Depending from the location, it may be necessary to escape the following special
 Use **unicode** symbols with copy/paste:  
 💣 🚀 ❤️ → 🙂
 
-> Blockquote text
-> - Item1
-> - Item2
->> *Nested* one
+> \> Blockquote text
 
 
 ## Horizontal rules
 
-A horizontal rule gets added by 3 or more hyphens:
+A horizontal rule gets added by **3 or more hyphens**:
 
 ---
 
 
 ## Lists
 
-List subitems have to indent at least as much as the first character that's not part of the list marker and not a whitespace. For unordered lists that's 2 and for ordered lists that's 3 or 4 if you hit the 10. list marker.
+Unordered list items start with one of `- * +` and order list items with a **number followed by a dot**. List subitems have to indent at least as much as the first character that's not part of the list marker and not a whitespace. For unordered lists that's 2 and for ordered lists that's 3 or 4 if you hit the 10. list marker.
 
 - Item1
   * SubItem1
-  * SubItem2
+    + SubSubItem1
 - Item2
 - Item3
 
 1. Item1
    1. SubItem1
-   2. SubItem2
+      1. SubSubItem1
 2. Item2
 3. Item3
 
 
 ## Code
 
-This is a `inline code` with backticks. 
+Enclose inline code in **backticks** `inline code`
 
     # Traditional code blocks with four leading spaces
     # or one tab (no syntax highlighting)
     echo "Hello World!"
-    printf ''%s\n' "$var1"
+    printf '%s\n' "$var1"
 
 ```bash
 # 3-backticks code blocks support syntax highlighting:
-# c cpp arduino|ino csharp javascript|js json html css php 
-# python|py bash powershell|ps markdown|md
+# c cpp arduino|ino csharp javascript|js json html css
+# php python|py bash powershell|ps markdown|md
 echo "Hello World!"
-printf ''%s\n' "$var1"
+printf '%s\n' "$var1"
 ```
 
 ```console
-# Some markdown renderers with the console language
-# will also highlight the prompt
+# The console syntax highlighting language supported
+# by some markdown renderers colors also the prompt
 foo@bar:~$ git --version
 ```
 
 
 ## Comments
 
-- Shows up in HTML source code output: `<!-- Comment -->`
+- Shows up in html source code output: `<!-- Comment -->`
 
 <!-- Comment -->
 
-- Does not show up in HTML source code output: `[Comment]: #`
+- Does not show up in html source code output: `[Comment]: #`
 
 [Comment]: #
 
 
 ## Tables
 
-| Head1 (left-align) | Head2 (centered) | Head3 (right-align) |
-| :----------------  | :--------------: | ------------------: |
-| Text1              | Text2            |               Text3 |
-| Text4              | Text5            |               Text6 |
+```
+| Left align  | Centered | Right align |
+| :---------  | :------: | ----------: |
+| T1          | T2       | T3          |
+| T4          | T5       | T6          |
+```
+
+| Left align  | Centered | Right align |
+| :---------  | :------: | ----------: |
+| T1          | T2       | T3          |
+| T4          | T5       | T6          |
 
 
 ## Links
 
-The path of the link is relative to the current file. In GitHub links starting with a slash are relative to the repository root.
+The path of a link is relative to the current file. In GitHub links starting with a slash are relative to the repository root.
 
 ### External links
 
-[External link to contaware.com](https://www.contaware.com "Optional link title")
+[Link](https://www.contaware.com "Optional Title")
+
+<https://www.contaware.com>
 
 ### Reference links
 
 Reference links are useful when linking multiple times to the same target:
 
-[First ref link to contaware.com][ref1]
+[First Link][ref1]
 
-[Second ref link to contaware.com][ref1]
+[Second Link][ref1]
 
-[ref1]: https://www.contaware.com "Optional link title"
+[ref1]: https://www.contaware.com "Optional Title"
 
-### Internal link
+### Email links
+
+[Contact Us](mailto:oliver.pfister@contaware.com)
+
+<oliver.pfister@contaware.com>
+
+### Internal links
 
 The anchors are derived from the headers like:
 
@@ -147,9 +167,3 @@ The anchors are derived from the headers like:
 ### Clickable image
 
 [![alt text](contaware-header.png)](https://www.contaware.com)
-
-### Image size
-
-The Markdown syntax for images does not allow image width and height, use html if supported:
-
-<img src="contaware-header.png" width="300" height="52" alt="alt text">
