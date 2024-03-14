@@ -190,6 +190,8 @@ The anchors are derived from the headers like:
 
 ### Image
 
+Big images are automatically scaled to fit the page width.
+
 ```md
 ![alt text](contaware-header.png "Optional Title")
 ```
