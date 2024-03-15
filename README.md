@@ -193,15 +193,15 @@ The anchors are derived from the headers like:
 Big images are automatically scaled to fit the page width.
 
 ```md
-![alt text](contaware-header.png "Optional Title")
+![alt text](figures/contaware-header.png "Optional Title")
 ```
 
-![alt text](contaware-header.png "Optional Title")
+![alt text](figures/contaware-header.png "Optional Title")
 
 ### Clickable image
 
 ```md
-[![alt text](contaware-header.png)](https://www.contaware.com)
+[![alt text](figures/contaware-header.png)](https://www.contaware.com)
 ```
 
-[![alt text](contaware-header.png)](https://www.contaware.com)
+[![alt text](figures/contaware-header.png)](https://www.contaware.com)
