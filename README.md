@@ -239,18 +239,14 @@ LaTeX formatted math is supported by some markdown flavors.
 
 - Surround an inline expression with single-dollar symbols: `$x^2$` $x^2$
 
-- Make a math block by enclosing it in double-dollar symbols:
+- Make math blocks by enclosing them in double-dollar symbols:
 
   ```
-  $$
-  P = 2\pi r
-  \\
-  A = \pi r^2
-  $$
+  $$P = 2\pi r$$
+  
+  $$A = \pi r^2$$
   ```
 
-  $$
-  P = 2\pi r
-  \\
-  A = \pi r^2
-  $$
+  $$P = 2\pi r$$
+  
+  $$A = \pi r^2$$
