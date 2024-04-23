@@ -237,7 +237,7 @@ Big images are automatically scaled to fit the page width.
 
 LaTeX formatted math is supported by some markdown flavors.
 
-- Surround an inline expression with single-dollar symbols: `$x^2$` $x^2$
+- Surround an inline math expression with single-dollar symbols: `$x^2$` $x^2$
 
 - Make math blocks by enclosing them in double-dollar symbols:
 
