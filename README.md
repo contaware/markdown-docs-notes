@@ -38,7 +38,7 @@ If html tags are supported:
 - `<small>small</small>` <small>small</small>
 
 Depending from the location, it may be necessary to escape the following special characters with a **leading backslash**:  
-\\ \` \* \_ \{\} \[\] \<\> \(\) \# \+ \- \. \! \|
+\\ \` \* \~ \_ \{\} \[\] \<\> \(\) \# \+ \- \. \! \| \$
 
 Use **unicode** symbols with copy/paste:  
 💣 🚀 ❤️ → 🙂
@@ -84,7 +84,7 @@ Unordered list items start with one of `- * +` and order list items with a **num
 
 ## Task lists
 
-Task lists are supported by some markdown flavors, they are sometimes also called check or todo lists:
+Task lists are supported by some markdown flavors, they are sometimes also called check lists or todo lists:
 
 ```
 - [ ] unchecked
@@ -231,3 +231,26 @@ Big images are automatically scaled to fit the page width.
 ```
 
 [![alt text](figures/contaware-header.png)](https://www.contaware.com)
+
+
+## Math
+
+LaTeX formatted math is supported by some markdown flavors.
+
+- Surround an inline expression with single-dollar symbols: `$x^2$` $x^2$
+
+- Make a math block by enclosing it in double-dollar symbols:
+
+  ```
+  $$
+  P = 2\pi r
+  \\
+  A = \pi r^2
+  $$
+  ```
+
+  $$
+  P = 2\pi r
+  \\
+  A = \pi r^2
+  $$
