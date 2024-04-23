@@ -28,6 +28,7 @@ here is the next line.
 
 - `*Italic*` *Italic*
 - `**Bold**` **Bold**
+- `~~Strikethrough~~` ~~Strikethrough~~
 
 If html tags are supported:
 
@@ -54,24 +55,49 @@ A horizontal rule gets added by **3 or more hyphens**:
 
 ## Lists
 
-Unordered list items start with one of `- * +` and order list items with a **number followed by a dot**. List subitems have to indent at least as much as the first character that's not part of the list marker and not a whitespace. For unordered lists that's 2 and for ordered lists that's 3 or 4 if you hit the 10. list marker.
+Unordered list items start with one of `- * +` and order list items with a **number followed by a dot**. List subitems have to indent at least as much as the first character that's not part of the list marker and not a whitespace. For unordered lists that's 2 and for ordered lists that's 3 or 4 if you hit the `10.` list marker.
+
+```
+- Item1
+  * SubItem1
+    + SubSubItem1
+- Item2
+```
 
 - Item1
   * SubItem1
     + SubSubItem1
 - Item2
-- Item3
+
+```
+1. Item1
+   1. SubItem1
+      1. SubSubItem1
+2. Item2
+```
 
 1. Item1
    1. SubItem1
       1. SubSubItem1
 2. Item2
-3. Item3
 
+
+## Task lists
+
+Task lists are supported by some markdown flavors, they are sometimes also called check or todo lists:
+
+```
+- [ ] unchecked
+- [x] checked
+```
+
+- [ ] unchecked
+- [x] checked
+  
 
 ## Code
 
-Enclose inline code in **backticks** `inline code`
+Enclose `inline code` in **backticks**.
 
     # Traditional code blocks with four leading spaces
     # or one tab (no syntax highlighting)
@@ -87,8 +113,8 @@ printf '%s\n' "$var1"
 ```
 
 ```console
-# The console syntax highlighting language supported
-# by some markdown renderers colors also the prompt
+# Some markdown renderers do color the prompt when
+# providing console as the syntax highlighting language
 foo@bar:~$ git --version
 ```
 
