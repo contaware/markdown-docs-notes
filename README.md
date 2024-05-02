@@ -95,9 +95,15 @@ Task lists are supported by some markdown flavors, they are sometimes also calle
 - [x] checked
   
 
-## Code
+## Inline code
 
-Enclose `inline code` in **backticks**.
+- Enclose `inline code` in **backticks**.
+
+- Enclose `` inline code containing `backtick(s)` `` in **double-backticks**.  
+  Note: the backtick delimiters surrounding an inline code may include one space after the opening and one before the closing to allow placing literal backticks at the beginning or end of an inline code.
+
+
+## Code blocks
 
     # Traditional code blocks with four leading spaces
     # or one tab (no syntax highlighting)
