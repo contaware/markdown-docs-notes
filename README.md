@@ -201,10 +201,11 @@ Reference links are useful when linking multiple times to the same target.
 
 The anchors are derived from the headers like:
 
-1. Making all letters lowercase
-2. Numbers remain as they are
-3. Spaces are replaced by hyphens
-4. All other characters are removed
+1. Making all letters lowercase.
+2. Numbers remain as they are.
+3. Spaces are replaced by hyphens.
+4. All other characters are removed.
+5. If we have duplicated section names, the first one is linked normally, the second one with `-1` append, the third one with `-2`, ...
 
 ```md
 [Internal link](#headings)
