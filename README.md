@@ -113,7 +113,7 @@ Task lists are supported by some markdown flavors, they are sometimes also calle
 ```bash
 # 3-backticks code blocks support syntax highlighting:
 # c cpp arduino|ino csharp javascript|js json html css
-# php python|py bash powershell|ps markdown|md
+# php python|py bash bat powershell|ps markdown|md
 echo "Hello World!"
 printf '%s\n' "$var1"
 ```
