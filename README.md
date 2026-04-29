@@ -102,7 +102,7 @@ Task lists are supported by some markdown flavors, they are sometimes also calle
 - Enclose `` inline code containing `backtick(s)` `` in **double-backticks**.  
   Note: the backtick delimiters surrounding an inline code may include one space after the opening and one before the closing to allow placing literal backticks at the beginning or end of an inline code.
 
-- Backticks do not support non-breaking spaces, instead use the `<code>` tag like <code>do&nbsp;not&nbsp;break</code>.
+- Backticks do not support non-breaking spaces, instead use the `<code>` tag <code>to&nbsp;not&nbsp;break</code>.
 
 
 ## Code blocks
